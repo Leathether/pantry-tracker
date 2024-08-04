@@ -41,3 +41,9 @@ header {
   width:5vw;
   height:5vw;
 }
+
+@media screen and (max-width:480px){
+  .headerText {
+    font-size:1rem;
+  }
+}
