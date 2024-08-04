@@ -30,11 +30,12 @@
     font-family:sans;
     width:85vw;
     height:10vw;
-    font-size:2rem;
+    font-size:3rem;
     display:flex;
     justify-content:left;
     align-items:center;
     margin-left:2vw;
+    font-family:arial;
 }
 
 .itemTextSpan {
@@ -42,6 +43,7 @@
     vertical-align: middle;
     line-height: normal;
 }
+
 
 @media screen and (max-width:480px) {
     .item {

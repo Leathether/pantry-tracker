@@ -33,12 +33,17 @@ header {
 }
 
 .listInput {
-  width:83vw;
+  width:63vw;
   height:5vw;
 }
 
 .listAdd {
   width:5vw;
+  height:5vw;
+}
+
+.dateInput {
+  width:20vw;
   height:5vw;
 }
 

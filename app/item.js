@@ -14,16 +14,22 @@ export const TextInput = () => {
 
 export const ItemList = () => {
   const [itemList, setItemList] = useState([]);
-  const [text, setText] = useState("");
+  const [text, setText] = useState("item");
+  const [dateText, setDateText] = useState("exp_date");
 
   const handleTextChange = (e) => {
     setText(e.target.value);
   };
 
+  const handleDateChange = (e) => {
+    setDateText(e.target.value);
+  };
+
   const addItem = () => {
     if (text.trim() !== "") {
-      setItemList([...itemList, text]);
-      setText("");
+      setItemList([...itemList, `${text}..........................................................${dateText}`]);
+      setText("item");
+      setDateText("exp_date");
     }
   };
 

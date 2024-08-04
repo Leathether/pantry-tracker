@@ -6,19 +6,31 @@ import Image from "next/image"
 import check from "./check.png"
 
 export default function Home() {
-  const [text, setText] = useState("");
+  const [text, setText] = useState("item");
+  const [dateText, setDateText] = useState("exp_date");
   const [itemList, setItemList] = useState([]);
+
 
   const handleTextChange = (e) => {
     setText(e.target.value);
   };
 
+  const handleDateChange = (e) => {
+    setDateText(e.target.value);
+  };
+
   const addItem = () => {
     if (text.trim() !== "") {
-      setItemList([...itemList, text]);
-      setText("");
+      setItemList([...itemList, `${text}..........................................................${dateText}`]);
+      setText("item");
+      setDateText("exp_date");
     }
   };
+
+  const removeDefault = (e) => {
+    setText("");
+    setDateText("");
+  }
 
   const deleteItem = (index) => {
     setItemList(itemList.filter((_, i) => i !== index));
@@ -33,7 +45,14 @@ export default function Home() {
             className="listInput" 
             value={text}
             onChange={handleTextChange}
+            onClick={removeDefault}
           />
+          <input
+            className="dateInput"
+            value={dateText}
+            onChange={handleDateChange}
+          >
+          </input>
           <Image 
             src={check} 
             className="listAdd" 
