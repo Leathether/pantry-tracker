@@ -1,0 +1,61 @@
+.itemContainer {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.item {
+    border-radius:20px;
+    background-color:rgb(200,200,200);
+    border-width:2px;
+    border-color:black;
+    display:flex;
+    flex-wrap:no-wrap;
+    flex-end:center;
+    flex-direction:row;
+    width:95vw;
+    height:10vw;
+    margin-top:5vh;
+}
+
+.itemDelButton {
+    background-align:center;
+    background-position:center;
+    width:10vw;
+    height:10vw;
+    border-radius:2px;
+}
+
+.itemText {
+    font-family:sans;
+    width:85vw;
+    height:10vw;
+    font-size:2rem;
+    display:flex;
+    justify-content:left;
+    align-items:center;
+    margin-left:2vw;
+}
+
+.itemTextSpan {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+@media screen and (max-width:480px) {
+    .item {
+        height:15vw;
+    }
+    
+    .itemDelButton {
+        height:15vw;
+        width:15vw;
+    }
+
+    .itemText {
+        width:80vw;
+        font-size:1rem;
+        height:15vw;
+    }
+}

@@ -1,0 +1,43 @@
+@import url("item.css");
+
+html {
+  padding:0px;
+  margin:0px;
+  display:flex;
+  align-items:center;
+}
+
+header {
+  width:100vw;
+  height:20vw;
+  border-radius:20px;
+  border-color:black;
+  border-width:2px;
+  background-color:rgb(200,200,200);
+  justify-contnet:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+
+.listContainer {
+  display:flex;
+  flex-dircetion:row;
+}
+
+.headerText {
+  font-size:3rem;
+  font-family:arial;
+  margin-bottom:3vw;
+}
+
+.listInput {
+  width:83vw;
+  height:5vw;
+}
+
+.listAdd {
+  width:5vw;
+  height:5vw;
+}
